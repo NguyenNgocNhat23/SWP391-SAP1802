@@ -24,7 +24,7 @@ const HomePage = () => {
                 </div>
                 <div className="col-md-6 info-section text-center">
                     <h3>Explore Our Exclusive Collections</h3>
-                    <p>At Auction Galaxy, we offer more than just auctions. Our exclusive collections feature rare and unique pieces that you won't find anywhere else. From vintage jewelry to contemporary designs, our collections are curated to provide something for every taste. Our expert appraisers ensure that each piece is authentic and of the highest quality, giving you the confidence to bid and buy with ease. Discover the world of Auction Galaxy and find the perfect piece to add to your collection today.</p>
+                    <p>At at Auction Galaxy, we offer more than just auctions. Our exclusive collections feature rare and unique pieces that you won't find anywhere else. From vintage jewelry to contemporary designs, our collections are curated to provide something for every taste. Our expert appraisers ensure that each piece is authentic and of the highest quality, giving you the confidence to bid and buy with ease. Discover the world of Auction Galaxy and find the perfect piece to add to your collection today.</p>
                     
                 </div>
             </div>
