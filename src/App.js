@@ -1,25 +1,58 @@
-import logo from './logo.svg';
-import './App.css';
+import { Route, Routes } from "react-router-dom";
+import HomePage from "./pages/user/homepage/HomePage";
+import { ROUTERS } from "./utils/router";
+import MasterLayout from "./pages/user/theme/masterLayout";
+import ProfilePage from "./pages/user/profilePage";
+import AllAuctionPage from "./pages/user/allAuctionPage";
+import RegisterSell from "./pages/user/registerSell";
+import RegisterBid from "./pages/user/registerBid";
+import ItemBidding from "./pages/user/itemBidding";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+const renderUserRouter = () => {
+    const userRouter = [
+        {
+            path: ROUTERS.USER.HOME,
+            component: <HomePage />
+        },
+        {
+            path: ROUTERS.USER.PROFILE,
+            component: <ProfilePage />
+        },
+        {
+            path: ROUTERS.USER.ALLAUCTIONPAGE,
+            component: <AllAuctionPage />
+        },
+        {
+            path: ROUTERS.USER.REGISTERSELL,
+            component: <RegisterSell />
+        },
+        {
+            path: ROUTERS.USER.REGISTERBID,
+            component: <RegisterBid />
+        },
+        {
+            path: ROUTERS.USER.ITEMBIDDING,
+            component: <ItemBidding />
+            
+        }
+
+    ];
+    return (
+        <MasterLayout>
+        <Routes>
+            {
+                userRouter.map((item, key) => (
+                    <Route key={key} path={item.path} element={item.component} />
+                ))
+            }
+        </Routes>
+        </MasterLayout>
+    );
+};
+
+const App = () => {
+    return renderUserRouter();
 }
 
 export default App;

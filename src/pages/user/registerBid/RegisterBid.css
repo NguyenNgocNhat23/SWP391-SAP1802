@@ -1,0 +1,5 @@
+.note-text {
+    font-style: italic;
+    font-size: 0.875em; /* Nhỏ hơn 1em để chữ nhỏ hơn */
+    color: #6c757d; /* Màu xám nhạt để dễ đọc */
+}

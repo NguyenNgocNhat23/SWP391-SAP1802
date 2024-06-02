@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Alice&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kadwa:wght@400;700&display=swap');
+
+.header {
+    display: flex;
+    align-items: center;
+    background-color: #f8f9fa;
+    position: sticky;
+    background-image: url('https://assets.diamondnexus.com/images/q_auto,f_auto/v1623189414/diamond_nexus/category_hero/summer_2021/Loose-Stones/Loose-Stones.jpg');
+    background-size: contain; 
+    top: 0;
+    z-index: 1000; 
+
+    .logo {
+        flex: 1 1 33%;
+        font-size: 36px;
+        font-weight: bold;
+        font-family: 'Alice', serif;
+        color: #065E0F;
+        margin-left: 30px;
+        
+        .tagline {
+            font-size: 12px;
+            font-weight: normal;
+            margin-top: 5px;
+            color: #065E0F;
+            margin-left: 20px;
+        }
+    }
+
+    .nav-links {
+        flex: 2 1 1%;
+        display: flex;
+        justify-content: space-around;
+        margin-right: 50px;
+
+        a {
+            padding: 5px 5px;
+            font-size: 15px;
+            text-decoration: none;
+            color: black;
+            font-family: 'Kadwa', serif;
+    
+            &:last-child {
+                margin-right: 0; 
+            }
+
+            &:hover {
+                background-color: #ffffff;
+            }
+        }
+    }
+  
+    .auction-wrapper {
+        position: relative; /* Thiết lập phần tử cha là relative */
+    }
+    
+    .auction-menu {
+        display: none; /* Ẩn menu ban đầu */
+        position: absolute;
+        top: 100%; /* Hiển thị ở phía dưới của phần "Auction" */
+        left: 0;
+        background-color: #fff; /* Màu nền cho menu */
+        border: 1px solid #ccc; /* Viền cho menu */
+        padding: 10px; /* Khoảng cách giữa các mục trong menu */
+        flex-direction: column; /* Hiển thị theo chiều dọc */
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Hiển thị đổ bóng */
+        border-radius: 5px; /* Bo tròn các góc */
+        z-index: 999; /* Đảm bảo menu luôn hiển thị trên cùng */
+        transition: all 0.3s ease; /* Hiệu ứng chuyển động mượt mà */
+        white-space: nowrap;
+    }
+    
+    .auction-wrapper:hover .auction-menu {
+        display: flex; /* Hiển thị menu khi hover vào phần auction-wrapper */
+    }
+    
+    .auction-menu a {
+        padding: 8px 12px; /* Kích thước padding cho các mục trong menu */
+        color: #333; /* Màu chữ */
+        text-decoration: none; /* Loại bỏ gạch chân */
+        transition: background-color 0.3s ease; /* Hiệu ứng khi hover */
+    }
+    
+    .auction-menu a:hover {
+        background-color: #f0f0f0; /* Màu nền khi hover */
+    }
+
+}
