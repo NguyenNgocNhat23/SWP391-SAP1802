@@ -7,7 +7,7 @@ import AllAuctionPage from "./pages/user/allAuctionPage";
 import RegisterSell from "./pages/user/registerSell";
 import RegisterBid from "./pages/user/registerBid";
 import ItemBidding from "./pages/user/itemBidding";
-
+import BidderEvaluate from "./pages/user/bidderEvaluate";
 
 const renderUserRouter = () => {
     const userRouter = [
@@ -34,6 +34,11 @@ const renderUserRouter = () => {
         {
             path: ROUTERS.USER.ITEMBIDDING,
             component: <ItemBidding />
+            
+        },
+        {
+            path: ROUTERS.USER.BIDDEREVALUATE,
+            component: <BidderEvaluate />
             
         }
 

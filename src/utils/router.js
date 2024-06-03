@@ -5,6 +5,7 @@ export const ROUTERS = {
         ALLAUCTIONPAGE: "all-auction",
         REGISTERSELL:"sell",
         REGISTERBID:"bid",
-        ITEMBIDDING:"itembid"
+        ITEMBIDDING:"itembid",
+        BIDDEREVALUATE:"bidder" 
     }
 }

@@ -40,7 +40,11 @@ strong {
     padding-right: 15px;
 }
 
-
+/* Định dạng cho các cột thông tin trong phần bidding */
+.bidding-info .col-sm-4 {
+    padding-left: 15px;
+    padding-right: 15px;
+}
 
 /* Định dạng cho các nút */
 .btn {
@@ -59,15 +63,4 @@ h2 {
     font-style: italic;
     font-size: 0.875em; /* Nhỏ hơn 1em để chữ nhỏ hơn */
     color: #6c757d; /* Màu xám nhạt để dễ đọc */
-}
-
-.bidding-info .auction-time {
-    font-weight: bold;
-    font-size: 1.2em; /* Tăng kích thước chữ để nổi bật hơn */
-    text-align: center; /* Canh giữa nội dung */
-    border: 1px solid #6c757d; /* Viền đỏ để thu hút sự chú ý */
-    padding: 8px; /* Thêm khoảng cách bên trong để nhìn rõ hơn */
-    border-radius: 3px; /* Bo tròn các góc */
-    background-color: #fff0f0; /* Nền màu hồng nhạt để nổi bật */
-    margin-bottom: 15px; /* Khoảng cách dưới để tách biệt với các phần khác */
 }
