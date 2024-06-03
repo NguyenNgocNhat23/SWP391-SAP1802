@@ -6,6 +6,11 @@ export const ROUTERS = {
         REGISTERSELL:"sell",
         REGISTERBID:"bid",
         ITEMBIDDING:"itembid",
-        BIDDEREVALUATE:"bidder" 
+        BIDDEREVALUATE:"bidder" ,
+        EMPLOYEEMANA:"employeemana",
+        ITEMMANA:"itemmana",
+        AUCTIONMANA:"auctionmana",
+        REQUESTLIST:"requestlist"
     }
+    
 }

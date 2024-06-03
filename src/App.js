@@ -7,6 +7,10 @@ import RegisterSell from "./pages/user/registerSell";
 import RegisterBid from "./pages/user/registerBid";
 import ItemBidding from "./pages/user/itemBidding";
 import BidderEvaluate from "./pages/user/bidderEvaluate";
+import StaffManagement from "./pages/admin/EmployeeMana";
+import ItemsManagement from "./pages/admin/ItemMana";
+import AuctionDetails from "./pages/admin/AuctionMana";
+import RequestHandling from"./pages/admin/RequestList";
 
 const renderUserRouter = () => {
     const userRouter = [
@@ -34,10 +38,25 @@ const renderUserRouter = () => {
             path: ROUTERS.USER.ITEMBIDDING,
             component: <ItemBidding />
             
-        },
-        {
+        },{
             path: ROUTERS.USER.BIDDEREVALUATE,
             component: <BidderEvaluate />
+            
+        },{
+            path: ROUTERS.USER.EMPLOYEEMANA,
+            component: <StaffManagement />
+            
+        },{
+            path: ROUTERS.USER.ITEMMANA,
+            component: <ItemsManagement />
+            
+        },{
+            path: ROUTERS.USER.AUCTIONMANA,
+            component: <AuctionDetails />
+            
+        },{
+            path: ROUTERS.USER.REQUESTLIST,
+            component: <RequestHandling />
             
         }
 

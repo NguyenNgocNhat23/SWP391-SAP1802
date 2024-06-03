@@ -1,0 +1,46 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+.handling-request {
+    background-color: #fefefe;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+thead {
+    background-color: #06b94b;
+}
+
+thead th {
+    text-align: center;
+}
+
+table {
+    background-color: #fff;
+}
+
+.table td, .table th {
+    vertical-align: middle;
+    text-align: center;
+}
+
+footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.request-container {
+    display: flex;
+    align-items: center;
+}
+
+.request-container label {
+    margin-right: 10px;
+}
+
+#searchRequest, #chooseRequest {
+    width: 50%;
+}
