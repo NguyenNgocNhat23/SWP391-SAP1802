@@ -1,9 +1,13 @@
-    import { memo } from "react";
-    import "./ItemBidding.css";
-    import 'bootstrap/dist/css/bootstrap.min.css';
+import { memo } from "react";
+import "./ItemBidding.css";
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Footer from "../theme/Footer";
+import Header from "../theme/Header";
 
-    const ItemBidding = () => {
-        return (
+const ItemBidding = () => {
+    return (
+        <>
+            <Header />
             <div className="container">
                 <h2 className="mt-4">ITEM LIVE BIDDING INFORMATION - ITEM HAS SOLD</h2>
                 <div className="row">
@@ -87,7 +91,9 @@
                     </div>
                 </div>
             </div>
-        );
-    };
+            <Footer />
+        </>
+    );
+};
 
-    export default memo(ItemBidding);
+export default memo(ItemBidding);

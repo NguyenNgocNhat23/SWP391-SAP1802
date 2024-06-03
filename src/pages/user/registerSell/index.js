@@ -1,9 +1,13 @@
 import { memo } from "react";
 import "./RegisterSell.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Footer from "../theme/Footer";
+import Header from "../theme/Header";
 
 const RegisterSell = () => {
     return (
+        <>
+            <Header />
         <div className="container mt-5">
             <h1>Register to evaluate/sell the item:</h1>
             <form>
@@ -63,6 +67,8 @@ const RegisterSell = () => {
                 </div>
             </form>
         </div>
+        <Footer />
+        </>
     );
 };
 

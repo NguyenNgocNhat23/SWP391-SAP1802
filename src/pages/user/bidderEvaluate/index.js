@@ -1,10 +1,15 @@
 import { memo } from "react";
 import "./BidderEvaluate.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Footer from "../theme/Footer";
+import Header from "../theme/Header";
+
 
 
 const BidderEvaluate = () => {
     return (
+        <>
+            <Header />
         <div class="container">
             <h2 class="mt-4">ITEM EVALUATION INFORMATION</h2>
             <div class="row">
@@ -84,6 +89,8 @@ const BidderEvaluate = () => {
                 </div>
             </div>
         </div>
+        <Footer />
+        </>
     )
 
 };

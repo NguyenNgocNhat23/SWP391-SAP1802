@@ -1,7 +1,6 @@
 import { Route, Routes } from "react-router-dom";
 import HomePage from "./pages/user/homepage/HomePage";
 import { ROUTERS } from "./utils/router";
-import MasterLayout from "./pages/user/theme/masterLayout";
 import ProfilePage from "./pages/user/profilePage";
 import AllAuctionPage from "./pages/user/allAuctionPage";
 import RegisterSell from "./pages/user/registerSell";
@@ -44,7 +43,7 @@ const renderUserRouter = () => {
 
     ];
     return (
-        <MasterLayout>
+
         <Routes>
             {
                 userRouter.map((item, key) => (
@@ -52,7 +51,7 @@ const renderUserRouter = () => {
                 ))
             }
         </Routes>
-        </MasterLayout>
+
     );
 };
 

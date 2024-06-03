@@ -1,9 +1,13 @@
 import { memo } from "react";
 import "./RegisterBid.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Footer from "../theme/Footer";
+import Header from "../theme/Header";
 
 const RegisterBid = () => {
     return (
+        <>
+            <Header />
         <div className="container mt-5">
             <h1>Bid registration</h1>
             <form>
@@ -77,6 +81,8 @@ const RegisterBid = () => {
                 <button type="submit" className="btn btn-primary">Submit Bid</button>
             </form>
         </div>
+        <Footer />
+        </>
     );
 };
 
